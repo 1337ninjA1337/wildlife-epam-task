@@ -8,6 +8,9 @@
     color: black;
     line-height: 1.5;
 }
+.contact img {
+    display: inline;
+}
 #tel,
 #inst,
 #telega,
@@ -18,4 +21,8 @@
 }
 .contact2 {
     display: inline-block;
+}
+td {
+    color:black;
+    width: auto;
 }
