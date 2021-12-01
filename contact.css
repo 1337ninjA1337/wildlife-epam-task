@@ -1,0 +1,21 @@
+
+.contact {
+    margin: 0 30px;
+    width: auto;
+    height: auto;
+    text-align: justify;
+    font-size: 35px;
+    color: black;
+    line-height: 1.5;
+}
+#tel,
+#inst,
+#telega,
+#pint,
+#google {
+    width: 40px;
+    margin: 0 20px;
+}
+.contact2 {
+    display: inline-block;
+}

@@ -1,0 +1,31 @@
+main {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+.blog {
+    margin: 0 30px;
+    color: black;
+}
+.blog p {
+    width: auto;
+    height: auto;
+    text-align: justify;
+    font-size: 35px;
+    color: black;
+    
+}
+.elephant {
+    float: left;
+    width: 300px;
+    margin: 0 30px;
+    border-radius: 80px;
+    box-shadow: 0 0 0 3px, 0 0 13px #333;
+}
+@media screen and (max-width: 1200px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        height: auto;
+    }
+}

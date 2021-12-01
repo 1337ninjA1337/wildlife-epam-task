@@ -47,6 +47,12 @@ nav{
 
 a{
     text-decoration: none;
+    font-size: 30px;
+    color: white;
+}
+a:hover {
+    color: white;
+    text-shadow: white 0 0 4px; 
 }
 
 #container section{
@@ -58,8 +64,10 @@ a{
     height: 779px;
     background: #02160B;
     background: url("./src/Rectangle.png");
+    background-size: cover;
     display: flex;
     flex-direction: column;
+    
 }
 
 #container section{
@@ -114,7 +122,7 @@ a{
 
 main {
     width: 100%;
-    height: 1368px;
+    height: auto;
     background: #cccccc;
     display: grid;
     grid-template-rows: 368px 360px 1fr;
@@ -174,21 +182,6 @@ main section div h4{
 main section div p{
     margin-bottom: 40px;
 }
-.deer{
-    background: url(./src/deer.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-.squirrel{
-    background: url(./src/squirrel.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-.owl{
-    background: url(./src/owl.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
 
 .mail_input{
     display: flex;
@@ -196,6 +189,8 @@ main section div p{
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
+    padding-bottom: 30px;
+    margin-top: 20px;
 }
 .email-input input{
     width: 540px;
@@ -204,10 +199,14 @@ main section div p{
     padding-left: 25px;
     opacity: 0.75;
     border: 1px solid #000000;
+    border-right: none;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0px;
-    color: #333333
+    color: #333333;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
 }
 
 #send{
@@ -215,6 +214,11 @@ main section div p{
     display: flex;
     align-items: center;
     justify-content:center;
+    border-top-left-radius: unset;
+    border-bottom-left-radius: unset;
+    border: 1px solid #000000;
+    border-left: none;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 }
 .email-input{
     margin-top: 60px;
@@ -231,50 +235,11 @@ footer{
     justify-content:space-around;
     align-items:center;
 }
-.blog {
-    margin: 0 30px;
+
+.carousel-inner {
+    max-width: 300px;
 }
-.blog p {
-    width: auto;
-    height: 300px;
-    text-align: justify;
-    font-size: 35px;
-    color: black;
-}
-.elephant {
-    float: left;
-    width: 300px;
-    margin: 0 30px;
-}
-.mission {
-    width: auto;
-    text-align: justify;
-    font-size: 35px;
-    color: black;
-    margin: 20px 30px;
-    position: relative;
-}
-.mission h2 {
-    text-align: justify;
-    font-size: 35px;
-    color: black;
-}
-.contact {
-    margin: 0 30px;
-    width: auto;
-    height: 300px;
-    text-align: justify;
-    font-size: 35px;
-    color: black;
-}
-#tel,
-#inst,
-#telega,
-#pint,
-#google {
-    width: 40px;
-    margin: 0 20px;
-}
+
 
 @media screen and (max-width: 1200px) {
     #container {
