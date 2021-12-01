@@ -182,7 +182,10 @@ main section div h4{
 main section div p{
     margin-bottom: 40px;
 }
-
+section h1:hover {
+    color: white;
+    text-shadow: white 0 0 4px;
+}
 .mail_input{
     display: flex;
     justify-content: center;
